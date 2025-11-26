@@ -1,0 +1,26 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Flask instance folder (config, uploads, etc.)
+instance/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# SQLite databases
+*.sqlite3
+db.sqlite3
+
+# Test / coverage artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Build / packaging
+dist/
+build/
+*.egg-info/
