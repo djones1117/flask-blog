@@ -9,6 +9,8 @@ def create_app(test_config=None):
     app.config.from_mapping(
         SECRET_KEY='dev',
         DATABASE=os.path.join(app.instance_path, 'flaskr.sqlite'),
+        S3_BUCKET_NAME=os.environ.get("S3_BUCKET_NAME"),
+        AWS_REGION=os.environ.get("AWS_REGION", "us-east-2"),
     )
 
     if test_config is None:

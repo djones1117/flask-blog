@@ -19,6 +19,11 @@
           <a class="action" href="{{ url_for('blog.update', id=post['id']) }}">Edit</a>
         {% endif %}
       </header>
+      {% if post['image_url'] %}
+        <div class="post-image">
+            <img src="{{ post['image_url'] }}" alt="Post image">
+        </div>
+{% endif %}
       <p class="body">{{ post['body'] }}</p>
     </article>
     {% if not loop.last %}
