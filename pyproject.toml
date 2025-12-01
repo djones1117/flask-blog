@@ -1,7 +1,7 @@
 [project]
 name = "flaskr"
 version = "1.0.0"
-description = "Flask based blog that also lets users upload images."
+description = "Flask based blog that allows users to Create, Read, Update, and Delete posts. Users can upload images via aws s3"
 dependencies = [
     "flask",
 ]
