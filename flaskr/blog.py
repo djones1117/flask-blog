@@ -12,7 +12,7 @@ from flaskr.db import get_db
 
 bp = Blueprint('blog', __name__)
 
-
+##test push
 def upload_image_to_s3(file_storage):
     """Upload an image to S3 and return its public URL, or None if no file."""
     if not file_storage or not file_storage.filename:
